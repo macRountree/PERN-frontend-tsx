@@ -1,14 +1,16 @@
 import {Outlet} from 'react-router-dom';
+import {SocialMedia} from '../components/SocialMedia';
 
 export const Layout = () => {
   return (
     <>
       <header className="bg-cyan-700">
-        <div className="mx-auto max-w-6xl py-10">
+        <div className="mx-auto max-w-6xl py-10 flex justify-between items-center">
           <h1 className="text-4xl text-white font-extrabold">
             {' '}
             Product Management
           </h1>
+          <SocialMedia />
         </div>
       </header>
 
